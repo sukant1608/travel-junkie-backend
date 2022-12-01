@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-const url =
-  "mongodb+srv://sukant:lekhraj@web-app.uiatt.mongodb.net/travelJunkieDB?retryWrites=true&w=majority";
+const url = process.env.URL;
 
 const connectionParams = {
   useNewUrlParser: true,
