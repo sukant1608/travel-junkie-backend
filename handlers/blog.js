@@ -1,17 +1,5 @@
 const db = require("../models");
 
-// module.exports.getMovie = async (req, res, next) => {
-//   try {
-//     const name = req.params.movieName;
-//     const movies = await db.Movie.find({
-//       movie_name: new RegExp(name),
-//     }).distinct("movie_name");
-//     res.json(movies);
-//   } catch (err) {
-//     next(err);
-//   }
-// };
-
 module.exports.getBlogs = async (req, res, next) => {
   try {
     const id = req.params.id;
